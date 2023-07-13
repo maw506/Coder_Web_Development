@@ -166,7 +166,7 @@ ul.topnav li.right {
   height: 100%;
   object-fit: cover;
   border-radius: 2px;
-  border: 0.5px solid rgb(194, 194, 194);
+  border: 2px solid rgb(194, 194, 194);
 }
 
 .notice_container {
@@ -179,7 +179,7 @@ ul.topnav li.right {
 
 .video_container iframe {
   height: 200px;
-  width: 340px;
+  width: 320px;
 }
 
 @media screen and (max-width: 990px) {
