@@ -6,7 +6,7 @@ body {
   height: 350px;
 }
 
-/*NAVBAR*/
+/* NAVBAR */
 ul.topnav {
   justify-content: center;
   position: sticky;
@@ -17,11 +17,9 @@ ul.topnav {
   overflow: hidden;
   background-color: #a6d5ff;
 }
-
 ul.topnav li {
   float: left;
 }
-
 ul.topnav li a {
   display: block;
   color: black;
@@ -29,16 +27,13 @@ ul.topnav li a {
   padding: 14px 16px;
   text-decoration: none;
 }
-
 ul.topnav li a:hover:not(.active) {
   background-color: #1352ff;
 }
-
 ul.topnav li a.active {
-  background-color: #0042dc;
+  background-color: #1352ff;
   color: white;
 }
-
 ul.topnav li.right {
   float: right;
 }
@@ -173,6 +168,7 @@ ul.topnav li.right {
   height: 320px;
   justify-content: center;
 }
+
 .notice_container h6 {
   height: 60px;
 }
@@ -187,36 +183,29 @@ ul.topnav li.right {
     width: 500px;
     height: 330px;
   }
-
   .notice_container h6 {
     height: 50px;
     width: 350px;
   }
-
   .secondary_img {
     width: 330px;
     height: 200px;
   }
-
   .notice {
     height: 600px;
   }
-
   .notice_body {
     height: 150px;
   }
 }
-
 @media screen and (max-width: 769px) {
   .principal_notice .principal_img {
     width: 480px;
     height: 340px;
   }
-
   .notice_container {
     height: 410px;
   }
-
   .notice_container h6 {
     height: 40px;
     width: 500px;
@@ -226,23 +215,19 @@ ul.topnav li.right {
     height: 300px;
   }
 }
-
 @media screen and (max-width: 600px) {
   ul.topnav li.right,
   ul.topnav li {
     float: none;
   }
-
   .notice_container {
     width: 450px;
     height: 360px;
   }
-
   .notice_container h6 {
     height: 60px;
     width: 450px;
   }
-
   .secondary_img {
     width: 450px;
     height: 250px;
@@ -251,3 +236,5 @@ ul.topnav li.right {
     height: 200px;
   }
 }
+
+/*# sourceMappingURL=styles.css.map */
