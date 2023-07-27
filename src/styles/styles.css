@@ -1,5 +1,16 @@
+* {
+  padding: 0px;
+  margin: 0;
+}
+
 body {
   background-color: rgba(240, 246, 252, 0.877);
+  overflow-x: hidden;
+}
+
+.row {
+  margin-left: 0;
+  margin-right: 0;
 }
 
 h1 {
@@ -25,7 +36,6 @@ ul.topnav {
 @media (max-width: 600px) {
   ul.topnav {
     flex-direction: column;
-    align-items: center;
   }
 }
 ul.topnav li {
@@ -167,6 +177,21 @@ ul.topnav li.right {
   height: 720px;
   justify-content: center;
 }
+@media (max-width: 900px) {
+  .notice {
+    height: 600px;
+  }
+}
+@media (max-width: 769px) {
+  .notice {
+    height: 620px;
+  }
+}
+@media (max-width: 356px) {
+  .notice {
+    height: 520px;
+  }
+}
 .notice_img {
   overflow: hidden;
   max-width: 400px;
@@ -174,6 +199,11 @@ ul.topnav li.right {
   max-width: 100%;
   height: 300px;
   object-fit: cover;
+}
+@media (max-width: 356px) {
+  .notice_img {
+    height: 200px;
+  }
 }
 .notice_title {
   min-width: 300px;
@@ -188,6 +218,11 @@ ul.topnav li.right {
   width: 100%;
   height: 600px;
   border-radius: 12px;
+}
+@media (max-width: 376px) {
+  .spotify_list {
+    height: 600px;
+  }
 }
 
 .principal_notice {
@@ -217,7 +252,7 @@ ul.topnav li.right {
   height: 100%;
   object-fit: cover;
   border-radius: 2px;
-  border: 2px solid rgb(194, 194, 194);
+  border: 2px solid #aaa;
 }
 
 .notice_container {
@@ -251,6 +286,100 @@ ul.topnav li.right {
 }
 
 /* CONTACTO */
+/*ENTREVISTAS*/
+.article_principal {
+  text-align: center;
+  justify-content: center;
+}
+.article_principal iframe {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  height: 350px;
+  width: 600px;
+}
+@media (max-width: 769px) {
+  .article_principal iframe {
+    height: 300px;
+    width: 500px;
+  }
+}
+@media (max-width: 600px) {
+  .article_principal iframe {
+    height: 250px;
+    width: 450px;
+  }
+}
+@media (max-width: 440px) {
+  .article_principal iframe {
+    height: 250px;
+    width: 350px;
+  }
+}
+@media (max-width: 376px) {
+  .article_principal iframe {
+    height: 200px;
+    width: 300px;
+  }
+}
+@media (max-width: 440px) {
+  .article_principal h1 {
+    font-size: 30px;
+    margin-bottom: 20px;
+  }
+}
+.article_principal p {
+  text-align: justify;
+  margin-top: 20px;
+}
+.article_secondary_container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+@media (max-width: 600px) {
+  .article_secondary_container {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+.article_secondary_item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+@media (max-width: 769px) {
+  .article_secondary_item {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+.article_secondary_item iframe {
+  width: 220px;
+  height: 120px;
+}
+@media (max-width: 900px) {
+  .article_secondary_item iframe {
+    width: 200px;
+    height: 100px;
+    margin-bottom: 20px;
+  }
+}
+@media (max-width: 600px) {
+  .article_secondary_item iframe {
+    width: 300px;
+    height: 200px;
+  }
+}
+.article_secondary_item h3 {
+  font-size: 15px;
+  margin-left: 10px;
+}
+@media (max-width: 600px) {
+  .article_secondary_item h3 {
+    font-size: 20px;
+  }
+}
+
+/*ENTREVISTAS*/
 @media screen and (max-width: 990px) {
   .principal_notice .principal_img {
     width: 500px;
@@ -263,9 +392,6 @@ ul.topnav li.right {
   .secondary_img {
     width: 330px;
     height: 200px;
-  }
-  .notice {
-    height: 600px;
   }
   .notice_body {
     height: 150px;
@@ -325,6 +451,11 @@ ul.topnav li.right {
   }
   .carousel img {
     height: 200px;
+  }
+}
+@media screen and (max-width: 376px) {
+  .carousel img {
+    height: 170px;
   }
 }
 
