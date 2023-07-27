@@ -1,7 +1,12 @@
 @import "colors.scss";
+@import "fonts.scss";
 
 body {
   background-color: rgba(240, 246, 252, 0.877);
+}
+
+h1 {
+  font-size: 28px;
 }
 
 .carousel img {
@@ -19,6 +24,10 @@ ul.topnav {
   overflow: hidden;
   display: flex;
   background-color: $primary-color-light;
+  @media (max-width: 600px) {
+    flex-direction: column; 
+    align-items: center;
+  }
 
   li {
     float: left;
@@ -44,6 +53,9 @@ ul.topnav {
       @media (max-width: 600px) {
         font-size: 10px;
       }
+    }
+    @media (max-width: 600px) {
+      float: none;
     }
   }
 
@@ -240,6 +252,27 @@ ul.topnav {
   width: 320px;
 }
 
+/* CONTACTO */
+
+.form_input {
+  border-radius: 10px;
+  line-height: 10px;
+  background-color: transparent;
+  border: 2px solid $primary-color-dark;
+  transition: all 0.5s ease-in-out;
+  padding: 10px;
+  margin-bottom: 15px;
+  width: 100%;
+  box-sizing: border-box;
+  outline: 0;
+
+  &:focus {
+    border: 2px solid $secondary-color-dark;
+  }
+}
+
+/* CONTACTO */
+
 @media screen and (max-width: 990px) {
   .principal_notice .principal_img {
     width: 500px;
@@ -272,7 +305,8 @@ ul.topnav {
   }
 
   .notice_container {
-    height: 410px;
+    width: auto;
+    height: 450px;
   }
 
   .notice_container h6 {
@@ -288,7 +322,7 @@ ul.topnav {
 
 @media screen and (max-width: 600px) {
   .notice_container {
-    width: 450px;
+    width: auto;
     height: 390px;
   }
 
@@ -301,6 +335,32 @@ ul.topnav {
     width: 450px;
     height: 250px;
   }
+  .carousel img {
+    height: 200px;
+  }
+}
+
+@media screen and (max-width: 428px) {
+  .principal_notice .principal_img {
+    width: 480px;
+    height: 260px;
+  }
+
+  .notice_container h6 {
+    height: 60px;
+    width: 100%;
+  }
+
+  .secondary_img {
+    width: 100%;
+    height: 240px;
+  }
+
+  .video_container iframe {
+    height: 200px;
+    width: 280px;
+  }
+
   .carousel img {
     height: 200px;
   }
