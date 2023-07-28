@@ -220,11 +220,9 @@ ul.topnav {
   height: 600px;
   border-radius: 12px;
   @media (max-width: 376px) {
-   height: 600px;   
+    height: 600px;
   }
 }
-
-
 
 .principal_notice {
   width: 100%;
@@ -375,8 +373,51 @@ ul.topnav {
     }
   }
 }
-
 /*ENTREVISTAS*/
+
+/*PROXIMOS CONCIERTOS*/
+.banner_concert {
+  box-shadow: -6.891px 24.032px 76px 0px rgba(102, 69, 118, 0.34);
+  border-radius: 20px;
+  margin-top: 20px;
+  height: 370px;
+  width: 1200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+  background: $primary-color-dark;
+  @media (max-width: 769px) {
+    height: 300px;
+    width: 900px;    
+  }
+  @media (max-width: 500px) {
+    height: 200px;
+    width: 680px;    
+  }
+  @media (max-width: 376px) {
+    height: 150px;
+    width: 650px;    
+  }
+  
+  img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 100%;
+    width: 100%;
+    border-radius: 20px;
+
+    &:hover {
+      opacity: 0.5;
+      -webkit-transition: 0.3s ease-in-out;
+      transition: .3s ease-in-out;
+    }
+  }
+}
+/*PROXIMOS CONCIERTOS*/
 
 @media screen and (max-width: 990px) {
   .principal_notice .principal_img {
