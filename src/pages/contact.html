@@ -43,41 +43,56 @@
         <li><a href="../../index.html">HOME</a></li>
         <li><a href="./latest_news.html">ULTIMAS NOTICIAS</a></li>
         <li><a href="./reviews.html">ENTREVISTAS</a></li>
-        <li>
-          <a class="active" href="./concerts.html">PROXIMOS CONCIERTOS</a>
-        </li>
-        <li><a href="./contact.html">CONTACTO</a></li>
+        <li><a href="./concerts.html">PROXIMOS CONCIERTOS</a></li>
+        <li><a class="active" href="#">CONTACTO</a></li>
       </ul>
     </nav>
 
-    <div class="container">
-      <div class="row d-flex text-center justify-content-center my-5">
-        <h1>PROXIMOS CONCIERTOS DEL PAIS</h1>
-      </div>
-      <div class="row d-flex justify-content-center text-center">
-        <div class="banner_concert col-12 col-sm-12 col-md-12 col-lg-12">
-          <h2>the weekend</h2>
-          <img src="../img/the_Weekend_Banner.jpg" alt="banner the weekend" />
-        </div>
-        <div class="banner_concert col-12 col-sm-12 col-md-12 col-lg-12">
-          <h2>TAYLOR SWIFT</h2>
-          <img src="../img/taylor_banner.jpg" alt="banner taylor siwft" />
-        </div>
-        <div class="banner_concert col-12 col-sm-12 col-md-12 col-lg-12">
-          <h2>TAN BIONICA</h2>
-          <img src="../img/tan_bionica_banner.jpg" alt="banner tan bionica" />
-        </div>
-        <div class="banner_concert col-12 col-sm-12 col-md-12 col-lg-12">
-          <h2>AITANA</h2>
-          <img src="../img/aitana_banner.jpg" alt="banner aitana" />
-        </div>
-        <div class="banner_concert col-12 col-sm-12 col-md-12 col-lg-12">
-          <h2>LOLLAPALOOZA ARGENTINA</h2>
-          <img src="../img/lollapalooza_banner.jpg" alt="banner lollapalooza" />
-        </div>
-        <div class="banner_concert col-12 col-sm-12 col-md-12 col-lg-12">
-          <h2>ROGER WATERS</h2>
-          <img src="../img/roger_waters_banner.jpg" alt="banner roger waters" />
+    <div class="container mt-4">
+      <h1 class="text-center">Comunicate con nosotros</h1>
+      <div class="row justify-content-center">
+        <div class="col-11 col-sm-11 col-md-8 col-lg-6">
+          <form action="#" method="post" class="mt-4">
+            <input
+              class="form_input"
+              type="text"
+              name="name"
+              id="name"
+              placeholder="Nombre y Apellido"
+            />
+            <input
+              class="form_input"
+              type="email"
+              name="email"
+              id="email"
+              placeholder="Correo electronico"
+            />
+            <input
+              class="form_input"
+              type="text"
+              name="topic"
+              id="topic"
+              placeholder="Asunto"
+            />
+            <input
+              class="form_input"
+              type="tel"
+              name="telphone"
+              id="telphone"
+              placeholder="Telefono (opcional)"
+            />
+            <textarea
+              class="form_input"
+              name="description"
+              id="description"
+              cols="30"
+              rows="10"
+              placeholder="Description"
+            ></textarea>
+            <div class="row ps-3 pe-3">
+              <button class="button_secondary secondary">ENVIAR</button>
+            </div>
+          </form>
         </div>
       </div>
     </div>
