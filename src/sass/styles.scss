@@ -1,5 +1,5 @@
 @import "colors.scss";
-@import "fonts.scss";
+
 * {
   padding: 0px;
   margin: 0;
@@ -15,7 +15,12 @@ body {
 h1 {
   font-size: 28px;
 }
-
+h2{
+  font-size: 20px;
+}
+h3{
+  font-size: 18px;
+}
 .carousel img {
   height: 350px;
 }
